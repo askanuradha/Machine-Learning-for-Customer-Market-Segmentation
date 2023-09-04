@@ -1,2 +1,15 @@
 # Machine-Learning-for-Customer-Market-Segmentation
 Unsupervised machine learning algorithms to perform customer market segmentation. Market segmentation is crucial for marketers since it enables them to launch targeted ad marketing campaigns that are tailored to customer's specific needs. 
+## Project Overview
+The goal of this project is to develop a machine learning model to classify credit card customers and segment them into distinct groups based on their financial behavior and usage of credit card features. By analyzing a large dataset of credit card details from a bank, including balance, purchase history, credit limit, and more, this project aims to provide insights into customer behavior and help the bank make data-driven decisions for marketing, risk assessment, and customer engagement.
+## Data set Attributes
+The Credit card details data set consists of 17 columns and 8950 rows. The dataset is divided into two parts: a training set for model development and a testing set for evaluating the model's performance.
+## Implementation
+The initial step is to load and preprocess the dataset. This includes handling missing values and standardizing the data using the StandardScaler from scikit-learn. The dataset contains various features such as balance, purchase history, credit limit, and more.
+To effectively classify and segment customers, the project employs the K-Means clustering algorithm. To find the optimal number of clusters for K-Means, the Elbow Method is used. A range of cluster numbers is tested, and the within-cluster sum of squares (WCSS) is calculated for each. The "elbow" point in the WCSS plot is indicative of the optimal number of clusters.
+To understand the relationships between features and clusters, a correlation matrix is computed and visualized. The correlation matrix highlights how each feature relates to the identified customer clusters. This step provides valuable insights into which features have the most significant impact on the clustering results.
+To further explore the data and potentially reduce dimensionality, Principal Component Analysis (PCA) can be applied. PCA identifies the principal axes in the data and can be used to visualize the clusters and their relationships in lower-dimensional space.
+### KMean Algorithm
+The k-means algorithm is a popular unsupervised machine learning algorithm used for clustering data into groups or clusters. It is widely used in various fields, including data analysis, image segmentation, and customer segmentation. The primary goal of k-means is to partition a dataset into k clusters, with each cluster representing a group of data points that are similar to each other based on certain features or attributes.
+### Elbow Method
+The Elbow Method is a graphical technique used to determine the optimal number of clusters (k) for a k-means clustering algorithm. It helps you find the point at which increasing the number of clusters no longer significantly reduces the within-cluster sum of squares (WCSS). 
